@@ -45,14 +45,13 @@ ul {
     max-width: 860px;
 }
 img {
-    object-fit: scale-down;
     height: 75%;
     width: 100%;
 }
 a {
+    padding: 10px;
     color: rgba(255, 0, 106, 0.511);
+    border-style: dashed;
     font-size: 120%;
     background-color: rgba(0, 0, 0, 0.187);
-    padding: 10px;
-    border-style: dashed;
 }
