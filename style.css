@@ -17,7 +17,7 @@ main {
     text-align: center;
     margin: 20px;
     font-size: 130%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-top: 20px;
 }
 ul {
@@ -54,4 +54,14 @@ a {
     border-style: dashed;
     font-size: 120%;
     background-color: rgba(0, 0, 0, 0.187);
+}
+header {
+    text-align: center;
+    margin-bottom: 65px;
+}
+.navlink {
+    padding: 8px;
+    margin: 10px;
+    border-style:double;
+    text-decoration: none;
 }
