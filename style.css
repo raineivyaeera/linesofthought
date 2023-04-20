@@ -14,8 +14,11 @@ main {
 }
 .titleHeader {
     text-decoration: underline;
-    text-align: left;
+    text-align: center;
     margin: 20px;
+    font-size: 130%;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 ul {
     list-style: none;
@@ -42,6 +45,14 @@ ul {
     max-width: 860px;
 }
 img {
-    width: 100%;
+    object-fit: scale-down;
     height: 75%;
+    width: 100%;
+}
+a {
+    color: rgba(255, 0, 106, 0.511);
+    font-size: 120%;
+    background-color: rgba(0, 0, 0, 0.187);
+    padding: 10px;
+    border-style: dashed;
 }
