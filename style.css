@@ -65,3 +65,8 @@ header {
     border-style:double;
     text-decoration: none;
 }
+.logo {
+    margin: 0 auto;
+    width: 345px;
+    text-align: center;
+}
