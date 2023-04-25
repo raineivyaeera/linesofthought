@@ -70,3 +70,11 @@ header {
     width: 345px;
     text-align: center;
 }
+.about {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    max-width: 860px;
+}
