@@ -1,0 +1,56 @@
+body {
+    zoom: 120%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(10, 10, 10);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+h1 {
+    font-size: 26px;
+    text-decoration: underline;
+}
+button {
+    border-radius: 0px;
+    border-style: none;
+    width: 120px;
+    height: 35px;
+    border-style: solid;
+    border-color: #9b111e;
+    border-width: 2px;
+    background-color: rgb(225, 228, 255);
+}
+button:hover {
+    cursor: pointer;
+    width: 124px;
+    background-color: #9b111e;
+}
+
+/*  */
+
+.WRAPPER {
+    border-style:solid;
+    border-color: #9b111e;
+    border-width: 4px;
+    border-radius: 0px;
+    width: 3%;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.spacer {
+    margin-bottom: 30px;
+}
+.TimerText {
+    font-size: 96px;
+    background-color: #9b111e;
+    font-size: inherit;
+    font-size: large;
+}
+.ButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
