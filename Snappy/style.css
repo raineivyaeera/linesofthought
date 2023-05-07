@@ -6,6 +6,16 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    translate: 0px -1px;
+}
+h3 {
+    color: rgb(225, 228, 255);
+}
 h1 {
     font-size: 26px;
     text-decoration: underline;
@@ -42,6 +52,11 @@ button:hover {
 }
 .spacer {
     margin-bottom: 30px;
+}
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 .TimerText {
     font-size: 96px;

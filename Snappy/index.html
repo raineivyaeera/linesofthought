@@ -10,14 +10,16 @@
 <body>
     <div class="WRAPPER">
         <div class="header">
-            <h1>Snappy</h1>
+            <a class="arrow_back" onclick="lastMode()"><h3> ◄ </h3> </a>
+            <h1 class="header_text">Snappy</h1>
+            <a class="arrow_forward" onclick="nextMode()"><h3 > ► </h3> </a>
         </div>
         <div class="application">
-            <h1 class="TimerText"></h1>
+            <h1 class="TimerText">asdf</h1>
             <div class="ButtonsContainer">
-                <button id="start">start</button>
-                <button id="pause">pause</button>
-                <button id="reset">reset</button>
+                <button id="start" onclick="start()">start</button>
+                <button id="pause" onclick="pause()">pause</button>
+                <button id="reset" onclick="reset()">reset</button>
             </div>
         </div>
     </div>
