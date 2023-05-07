@@ -1,10 +1,11 @@
 const header_text = document.querySelector('.header_text');
-const timer_text = document.querySelector('.TimerText');
+const timer_text = document.querySelector('.TimerText'); 
 const start_btn = document.getElementById('start');
 const pause_btn = document.getElementById('pause');
 const reset_btn = document.getElementById('reset');
 const left_btn = document.getElementById('arrow_back');
 const right_btn = document.getElementById('arrow_forward');
+const wrapper = document.querySelector('.WRAPPER');
 
 const start_sound = new Audio('start.mp3');
 const pause_sound = new Audio('pause.mp3');
@@ -17,7 +18,6 @@ let interval = null;
 let mode = 0;
 
 function timer() {
-    window.resizeTo(200, 200);
     let hrs = Math.floor(seconds / 3600);
     let mins = Math.floor((seconds - (hrs * 3600)) / 60);
     let secs = seconds % 60;
@@ -60,13 +60,11 @@ function start() {
     }
     interval = setInterval(timer, 1000);
 }
-
 function pause() {
     pauseSound();
     clearInterval(interval);
     interval = null;
 }
-
 function reset() {
     calcMode();
     pause();
@@ -108,6 +106,11 @@ function calcMode() {
         case 0:
             seconds = 0;
             header_text.innerText = 'Snappy';
+            wrapper.style.borderColor = '#9b111e';
+            timer_text.style.backgroundColor = '#9b111e';
+            start_btn.style.borderColor = '#9b111e';
+            pause_btn.style.borderColor = '#9b111e';
+            reset_btn.style.borderColor = '#9b111e';
             timer();
             pause();
             pause_sound.volume = 0;
@@ -115,6 +118,11 @@ function calcMode() {
         case 1:
             seconds = 3120;
             header_text.innerText = 'Quartz';
+            wrapper.style.borderColor = '#51414F';
+            timer_text.style.backgroundColor = '#51414F';
+            start_btn.style.borderColor = '#51414F';
+            pause_btn.style.borderColor = '#51414F';
+            reset_btn.style.borderColor = '#51414F';
             timer();
             pause();
             pause_sound.volume = 0;
@@ -122,6 +130,11 @@ function calcMode() {
         case 2:
             seconds = 600;
             header_text.innerText = 'Salvo';
+            wrapper.style.borderColor = '#003cff';
+            timer_text.style.backgroundColor = '#003cff';
+            start_btn.style.borderColor = '#003cff';
+            pause_btn.style.borderColor = '#003cff';
+            reset_btn.style.borderColor = '#003cff';
             timer();
             pause();
             pause_sound.volume = 0;
@@ -129,11 +142,15 @@ function calcMode() {
         case 3:
             seconds = 1500;
             header_text.innerText = 'Pomodoro';
+            wrapper.style.borderColor = '#740a13';
+            timer_text.style.backgroundColor = '#740a13';
+            start_btn.style.borderColor = '#740a13';
+            pause_btn.style.borderColor = '#740a13';
+            reset_btn.style.borderColor = '#740a13';
             timer();
             pause();
             pause_sound.volume = 0;
             break; 
     }
 }
-
 timer();
